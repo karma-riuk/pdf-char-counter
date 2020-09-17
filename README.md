@@ -23,7 +23,10 @@ line, then the alternative install would be to run these commands:
 ```bash
 cd `mktemp -d`
 git clone https://github.com/karma-riuk/pdf-char-counter
+cd pdf-char-counter
 sudo install pdf-char-counter /usr/local/bin/pdf-char-counter
+cd ../
+rm -rf pdf-char-counter/
 ```
 
 ## Usage
