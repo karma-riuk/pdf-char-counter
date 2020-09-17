@@ -8,8 +8,7 @@ characters are present in a PDF document.
 To install this program, just run the following command in the terminal
 ```bash
 sudo wget -O /usr/local/bin/pdf_char_counter
-http://github.com/karma-riuk/pdf-char-counter && echo "Install successful" ||
-echo "Something went wrong"
+http://github.com/karma-riuk/pdf-char-counter && echo "Install successful" || echo "Something went wrong"
 ```
 And insert your password after running the command.
 
