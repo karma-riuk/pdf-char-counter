@@ -1,4 +1,4 @@
-# PDF - Char Counter
+# PDF - Character Counter
 
 ## About
 This is a simple bash script for Mac OS that allows you to check how many
