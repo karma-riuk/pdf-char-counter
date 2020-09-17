@@ -7,8 +7,7 @@ characters are present in a PDF document.
 ## Installation
 To install this program, just run the following command in the terminal
 ```bash
-sudo wget -O /usr/local/bin/pdf_char_counter
-http://github.com/karma-riuk/pdf-char-counter && echo "Install successful" || echo "Something went wrong"
+sudo wget -O /usr/local/bin/pdf_char_counter https://github.com/karma-riuk/pdf-char-counter/blob/master/pdf_char_counter && echo "Install successful" || echo "Something went wrong"
 ```
 And insert your password after running the command.
 
@@ -23,7 +22,7 @@ line, then the alternative install would be to run these commands:
 cd `mktemp -d`
 git clone https://github.com/karma-riuk/pdf-char-counter
 cd pdf-char-counter
-sudo install pdf-char-counter /usr/local/bin/pdf-char-counter
+sudo install pdf_char_counter /usr/local/bin/pdf_char_counter
 cd ../
 rm -rf pdf-char-counter/
 ```
