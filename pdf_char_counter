@@ -8,7 +8,7 @@ count () {
 
 cur_dir="$(cd "`dirname "${BASH_SOURCE[0]}"`" && pwd)"
 
-files=$(find "$cur_dir" -maxdepth 1 -type f | grep "pdf")
+files=$(find "$cur_dir" -maxdepth 1 -type f | grep ".pdf$")
 
 echo ""
 echo ""
