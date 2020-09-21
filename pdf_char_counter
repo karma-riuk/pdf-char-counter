@@ -2,8 +2,8 @@
 
 TITLE="PDF - Word Counter"
 notify () {
-    notify-send "$TITLE" "$1"
-    #terminal-notifier -title "$TITLE" -message "$2"
+    #notify-send "$TITLE" "$1"
+    terminal-notifier -title "$TITLE" -message "$1"
 }
 
 count () {
@@ -11,10 +11,6 @@ count () {
 }
 
 cur_dir="$(cd `dirname ${BASH_SOURCE[0]}` && pwd)"
-
-notify "$cur_dir"
-exit # comment this line to execute the rest of the script
-
 
 files=$(find "$cur_dir" -maxdepth 1 -type f | grep "pdf")
 
