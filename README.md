@@ -23,6 +23,7 @@ cd `mktemp -d`
 git clone https://github.com/karma-riuk/pdf-char-counter
 cd pdf-char-counter
 sudo install pdf_char_counter /usr/local/bin/pdf_char_counter
+sudo chmod 755 /usr/local/bin/pdf_char_counter
 cd ../
 rm -rf pdf-char-counter/
 ```
