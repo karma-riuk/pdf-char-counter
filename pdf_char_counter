@@ -6,7 +6,7 @@ count () {
     pdftotext "$1" - | wc -c
 }
 
-cur_dir="$(cd `dirname ${BASH_SOURCE[0]}` && pwd)"
+cur_dir="$(cd "`dirname "${BASH_SOURCE[0]}"`" && pwd)"
 
 files=$(find "$cur_dir" -maxdepth 1 -type f | grep "pdf")
 
@@ -16,6 +16,6 @@ echo ""
 while IFS="\n" read file; do
     word_count=$(count "$file")
     filename="$(basename "$file")"
-    echo "$filename: $word_count characters"
+    echo "$filename: $(printf "%'d" $word_count) characters"
 done <<< "$files"
 
